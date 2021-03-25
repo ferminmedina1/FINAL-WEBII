@@ -14,3 +14,5 @@ $r->addRoute("bbva/clientes/:ID", "DELETE", "apiClientesController", "deleteClie
 
 //CREAR UN CLIENTE
 $r->addRoute("nuevoCliente", "POST", "apiClientesController", "editCliente");
+
+//Con estos ENDPOINTS se puede lograr muchas otras cosas simplemente se tendria que cambiar el HTTP para que no haya errores y no queden iguales.
