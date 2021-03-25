@@ -1,0 +1,10 @@
+Primeramente tendriamos que empezar a crear la API. Creando un .htaccess y con su respectivo router. Ademas de crear el propio MVC de la API
+Primero se tendria que hacer una clase abstracta del ApiController el cual va a tener la funcion de obtener la informacion y poder hacer
+un json_decode. Luego para cada controlador que querramos crear tienen que heredar de la clase ApiController. Ademas, se tendria que crear
+un View de la API que tendra la funcion de mostrarle al cliente la informacion con un metodo llamado response en el cual se dara una 
+respuesta al cliente en formato json. En esta Vista ademas se tendra que crear una funcion la cual retorna un codigo segun lo que haya
+sucedido previamente. Retorna el estado de la respuesta, es decir que si nuestro cliente pidio informacion la cual no existe esta funcion
+se encargara de devolverle el codigo adecuado, en este caso 404.
+No esta de mas agregar que por cada tabla se tendria que crear un Controller nuevo asi generamos mas orden y que el mantenimiento sea mas
+llevadero.
+

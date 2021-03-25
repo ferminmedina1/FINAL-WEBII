@@ -1,0 +1,16 @@
+B) Defina la tabla de ruteo para cada requerimiento. (ENDPOINT + METODO HTTP + CONTROLADOR+MÉTODO). No es necesario implementar.
+
+//VER DATOS DE TODOS LOS CLIENTES
+$r->addRoute("bbva/clientes/:ID", "GET", "apiClientesController", "clienteByID");
+
+//VER DATOS DE UN SOLO CLIENTE
+$r->addRoute("bbva/clientes/:ID", "GET", "apiClientesController", "clienteByID");
+
+//MODIFICAR DATOS DE UN CLIENTE
+$r->addRoute("bbva/clientes/:ID", "PUT", "apiClientesController", "editCliente");
+
+//ELIMINAR UN CLIENTE
+$r->addRoute("bbva/clientes/:ID", "DELETE", "apiClientesController", "deleteCliente");
+
+//CREAR UN CLIENTE
+$r->addRoute("nuevoCliente", "POST", "apiClientesController", "editCliente");
